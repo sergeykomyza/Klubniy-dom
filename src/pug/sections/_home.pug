@@ -1,0 +1,18 @@
+
+.home-slider#home 
+	.swiper 
+		.swiper-wrapper
+			+slide('slide-0.webp', 'клубный дом', '«изобилие»', 'флагман доступного комфортного жилья <br> на северо-востоке ближайшего Подмосковья!')
+			+slide('ordercall-img.webp')
+			+slide('slide-0.webp')
+		.home-slider__nav
+			.slider-count 
+				.slider-count__curr
+				.slider-count__divider
+				.slider-count__total
+			.swiper-pagination
+			.home-slider__arrows 
+				button.home-slider__arrow.js-home-slider--prev
+					img(src="img/icons/icon-arrow-left.png", alt="arrow")
+				button.home-slider__arrow.js-home-slider--next
+					img(src="img/icons/icon-arrow-right.png", alt="arrow")

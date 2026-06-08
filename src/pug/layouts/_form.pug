@@ -1,0 +1,10 @@
+.reservation-form
+	form.form(action="/")  
+		.reservation-form__title Успей забронировать Аппартаменты по цене 2022 года
+		.reservation-form__fields 
+			.reservation-form__field
+				input.form__input(type="text" placeholder="Ваше имя")
+			.reservation-form__field
+				input.form__input.js-phoneMask(type="text" placeholder="Телефон")
+			+button('reservation-form__button', 'отправить заявку')
+

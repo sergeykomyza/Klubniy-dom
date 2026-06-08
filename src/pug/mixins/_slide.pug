@@ -1,0 +1,14 @@
+
+
+mixin slide(slideImg, overtitle, title, text, img)
+	.swiper-slide 
+		img.swiper-slide__img(src="img/" + slideImg, alt="slide")
+		.container 
+			.slider-card(data-swiper-parallax="-800" data-swiper-parallax-duration="600") 
+				.slider-card__title.title
+					p.title__overtitle #{overtitle} 
+					.title__name #{title}
+				figure.slider-card__info 
+					img.slider-card__img(src="img/slide-img-0.webp", alt="slide-img")
+					p.slider-card__text !{text}
+					+button('slider-card__button', 'подробнее')

@@ -1,0 +1,12 @@
+section.ordercall 
+	.container 
+		.ordercall__title 
+			+title('остались вопросы ?', 'обратный звонок')
+		.ordercall__box 
+			img.ordercall__img(src="img/ordercall-img.webp", alt="ordercall-img")
+			form.ordercall-form(action="/")
+				p.ordercall-form__title Оставьте заявку и мы поможем вам подобрать недвижимость, или ответим на любые вопросы.
+				input.ordercall-form__input(type="text" placeholder='Ваше имя')
+				input.ordercall-form__input.js-phoneMask(type="text" placeholder='Телефон')
+				+button('ordercall-form__button', 'отправить заявку')
+				p.ordercall-form__text Отправляя заявку, вы соглашаетесь на обработку ваших персональных данных в соответствии с политикой конфеденциальности.

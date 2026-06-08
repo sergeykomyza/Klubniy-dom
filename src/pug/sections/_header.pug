@@ -1,0 +1,26 @@
+-
+	menu = [
+			{href: 'about', name: 'о проекте'},
+			{href: 'apartaments', name: 'апартаменты'},
+			{href: 'location', name: 'расположение'},
+			{href: 'mortgage', name: 'ипотека'},
+			{href: 'faq', name: 'faq'},
+			{href: 'contacts', name: 'контакты'}
+		]
+
+header.header
+	.container 
+		nav.header__nav 
+			img.logo(src="img/logo.png", alt="logo")
+			button.mobile.header__burger.js-menutoggle 
+				img(src="img/icons/icon-menu.png", alt="icon-menu")
+			.header-menu
+				.mobile
+					button.header-menu__close.js-menutoggle 
+						i.fa-solid.fa-xmark
+				ul.header-menu__list
+					each item in menu
+						li.header-menu__item 
+							a.header-menu__link.js-scrollToSection(href="#" + item.href)= item.name
+			+phone('header__phone', '+74959799955', '+7 (495) 97 999 55')
+			a.header__button(href="#modal-form" data-fancybox) заказать звонок

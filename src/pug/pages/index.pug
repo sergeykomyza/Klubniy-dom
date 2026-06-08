@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include ./../sections/_head.pug
+		title Klubniy Dom
+	body
+
+		include ./../mixins/_slide.pug
+		include ./../mixins/_title.pug
+		include ./../mixins/_preview.pug
+		include ./../mixins/_button.pug
+		include ./../mixins/_phone.pug
+		// ======================================== HEADER
+		include ./../sections/_header.pug
+		.main-page
+			// ======================================== НАЧАЛЬНЫЙ ЭКРАН
+			include ./../sections/_home.pug
+			// ======================================== О ПРОЕКТЕ
+			include ./../sections/_about.pug
+			// ======================================== АПАРТАМЕНТЫ
+			include ./../sections/_apartaments.pug
+			// ======================================== ФОТОГАЛЕРЕЯ
+			include ./../sections/_gallery.pug
+			// ======================================== РАСПОЛОЖЕНИЕ
+			include ./../sections/_location.pug
+			// ======================================== ИПОТЕКА
+			include ./../sections/_mortgage.pug
+			// ======================================== ВОПРОСЫ
+			include ./../sections/_faq.pug
+			// ======================================== ОБРАТНЫЙ ЗВОНОК
+			include ./../sections/_ordercall.pug
+		// ======================================== FOOTER
+		include ./../sections/_footer.pug
+		// ======================================== 
+		include ./../sections/_fastCommunication.pug
+		// ======================================== 
+		include ./../layouts/_modal.pug
+		// ======================================== SCRIPTS
+		include ./../sections/_scripts.pug
+
+

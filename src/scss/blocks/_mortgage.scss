@@ -1,0 +1,81 @@
+.mortgage{
+
+	// @media(max-width:565px){
+	// 	font-size: 7px;
+	// }
+
+	padding: 7.6em 0 0 0;
+	background: url('../img/bg-2.webp') center 25.5em/contain no-repeat;
+
+	&__title{
+		margin: 0 0 7em 0;
+	}
+
+	&__box{
+		position: relative;
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-end;
+		margin: 0 0 4.8em 0;
+		padding: 0 8.7em 0 0;
+		border-bottom: 2.6em solid var(--colorPink);
+		@media(max-width:768px){
+			flex-direction: column-reverse;
+			padding: 0 0 0 0;
+		}
+	}
+
+	&__img{
+		@media(max-width:768px){
+			width: 100%;
+		}
+	}
+
+	&__logo{
+		@extend .location__logo;
+		left: inherit;
+		right: 56.3em;
+	}
+
+	&__list{
+		padding: 0 0 0 1.6em;
+		@media(max-width:768px){
+			padding: 0 0 0 0;
+		}
+	}
+
+	&__item{
+		display: flex;
+		align-items: center;
+		margin: 0 0 2em 0;
+	}
+
+	&__icon{
+		width: 6em;
+		height: 6em;
+		object-fit: contain;
+		margin: 0 4.6em 0 0;
+	}
+
+	&__text{
+		font-size: 1.6em;
+	}
+}
+
+.mortgage-info{
+	flex-shrink: 0;
+	width: 44.4em;
+	margin: 0 0 0 9.8em;
+	@media(max-width:768px){
+		width: 100%;
+		margin: 0 0 0 0;
+	}
+	&__title{
+		margin: 0 0 1.7em 0;
+		font-size: 1.6em;
+	}
+	&__button{
+		width: 18.5714em;
+		margin: 0 0 5.3em 0;
+	}
+}

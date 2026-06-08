@@ -1,0 +1,40 @@
+-
+	menu = [
+			{href: 'about', name: 'о проекте'},
+			{href: 'apartaments', name: 'апартаменты'},
+			{href: 'location', name: 'расположение'},
+			{href: 'mortgage', name: 'ипотека'},
+			{href: 'faq', name: 'faq'},
+			{href: 'contacts', name: 'контакты'}
+		]
+
+footer.footer#contacts 
+	img.footer__decor(src="img/footer-decor.webp", alt="footer-decor")
+	.container 
+		.footer__box 
+			.footer__col 
+				img.footer__logo(src="img/footer-logo.png", alt="footer-logo")
+				p.footer__adress Г. ЩЕЛКОВО УЛ. БРАВАРСКАЯ 46
+				+phone('footer__phone','+74959799955','+7 (495) 97 999 55')
+				+phone('footer__phone','+79775575955','+7 (977) 55 759 55')
+				p.footer__rights © Клубный дом «Изобилие», #[br] все права защищены 2022
+			.footer__col 
+				+button('footer__button', 'заказать звонок')
+				ul.footer-menu 
+					each item in menu
+						li.footer-menu__item
+							a.footer-menu__link.js-scrollToSection(href="#" + item.href)= item.name 
+				a.footer__policy(href="") Политика конфиденциальности 
+			.footer__col
+				.socials 
+					each icon in ['fab fa-facebook-f', 'fab fa-instagram', 'fab fa-youtube']
+						a.socials__icon(href="")
+							i(class=`${icon}`)
+	.footer-develop 
+		.container
+			.footer-develop__box
+				span Разработка и продвижение сайта
+				img(src="img/logo-scrum.png", alt="logo-scrum")
+
+a.go-top.js-scrollToSection(href="#home") 
+	img(src="img/icons/icon-gotop.png", alt="go-top")

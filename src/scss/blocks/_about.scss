@@ -1,0 +1,47 @@
+.about{
+
+	// @media(max-width: 565px){
+	// 	font-size: 7px;
+	// }
+
+	padding: 17.2em 0 8em 0;
+	background: url('../img/bg-0.webp') center 25em/contain no-repeat;
+	&__logo{
+		position: absolute;
+		top: 0em;
+		left: 56.3em;
+		display: block;
+		width: 15.4em;
+		@media(max-width: 565px){
+			display: none;
+		}
+	}
+	&__title{
+		margin: 0 0 7.1em 0;
+	}
+	&__content{
+		position: relative;
+		margin: 0 0 4.8em 0;
+	}
+	&__img{
+		width: 128em;
+		margin: -25.8em 0 0 0;
+	}
+	&__text{
+		position: relative;
+		width: 64em;
+		padding: 0 11.2em 0 1.9em;
+		@media(max-width: 565px){
+			width: 100%;
+			padding: 0 1.6em;
+		}
+		p{
+			margin: 0 0 1.6em 0;
+			font-size: 1.6em;
+			letter-spacing: 0.1px;
+			line-height: 1.46;
+			text-align: justify;
+		}
+		
+	}
+}

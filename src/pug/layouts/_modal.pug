@@ -1,0 +1,9 @@
+.modal#modal-form(style="display:none")
+	.modal-form
+		form.form(action="/")  
+			.modal-form__title Заказать звонок
+			.modal-form__field
+				input.form__input(type="text" placeholder="Ваше имя")
+			.modal-form__field
+				input.form__input.js-phoneMask(type="text" placeholder="Телефон")
+			+button('modal-form__button', 'отправить заявку')

@@ -1,0 +1,24 @@
+-
+	list = [
+		{icon: 'icon-rate.png', text: 'Ставка от 9.5% годовых'},
+		{icon: 'icon-hand.png', text: 'Сотрудничаем с 10 банками'},
+		{icon: 'icon-diagram.png', text: 'Первоначальный взнос от 15%'},
+		{icon: 'icon-calendar.png', text: 'Срок кредитования до 25 лет'}
+	]
+
+section.mortgage#mortgage 
+	.container 
+		.mortgage__title 
+			+title('доступная', 'ипотека')
+		.mortgage__box
+			img.mortgage__logo(src="img/logo.png", alt="logo")
+			img.mortgage__img(src="img/mortgage-img.webp", alt="mortgage-img")
+			.mortgage-info 
+				p.mortgage-info__title Оставьте заявку и наш ипотечный менеджер подберет #[br] для Вас лучшие условия.
+				+button('mortgage-info__button', 'заявка на ипотеку')
+				ul.mortgage__list 
+					each li in list 
+						li.mortgage__item 
+							img.mortgage__icon(src="img/icons/" + li.icon, alt="icon")
+							span.mortgage__text= `- ${li.text}`
+		include ./../layouts/_form.pug

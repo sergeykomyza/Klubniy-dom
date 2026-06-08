@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include ./../sections/_head.pug
+		title Site | Templates
+	body
+		include ./../mixins/_title.pug
+		include ./../mixins/_preview.pug
+		include ./../mixins/_button.pug
+		include ./../mixins/_phone.pug
+		.templates
+			.container
+				.templates__item
+					+button('templates__button', 'подробнее')
+				.templates__item
+					+phone('templates__phone','+7 (495) 123 45 67')
+				.templates__item
+					+title('о проекте', 'Клубный дом «Изобилие»')
+				.templates__item
+					include ./../layouts/_form.pug
+				.templates__item
+					+preview('apartaments-0.webp', 'Презентабельный вид начиная с холла', 'preview--sm', 'preview--grid2')
+		// ======================================== SCRIPTS
+		include ./../sections/_scripts.pug
+
+

@@ -1,0 +1,41 @@
+.fast-communication{
+	position: fixed;
+	z-index: 1;
+	bottom: 5em;
+	right: 5em;
+	@media(max-width:565px){
+		right: 1em;
+	}
+	&__icon{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 7em;
+		height: 7em;
+		border-radius: 50%;
+		animation: fastCommunicationIconsAnimation 2s ease infinite;
+		&--whatsapp{
+			margin: 0 0 1em 0;
+			background: #55C568;
+		}
+		&--telegram{
+			background: #5DBDF4;
+		}
+		i{
+			font-size: 4em;
+			color: #FFF;
+		}
+	}
+}
+
+@keyframes fastCommunicationIconsAnimation{
+	0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1.1);
+	}
+	100%{
+		transform: scale(1);
+	}
+}

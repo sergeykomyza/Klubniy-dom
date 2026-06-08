@@ -1,0 +1,127 @@
+@import 'blocks/fonts';
+@import 'blocks/vars';
+
+/* ===================================================================*/
+/* ====================================================== main styles */ 
+/*====================================================================*/
+:root{
+	--fontMain: "CenturyGothic";
+	--fontBold: "CenturyGothic-Bold";
+
+	--colorBg: #EEE;
+	--colorMain: #1d1d1d;
+	--colorGreen: #00a52b;
+	--colorGold: #a2895b;
+	--colorBrown: #615236;
+	--colorPink: #e1dbd0;
+	--colorGray: #848484;
+}
+
+
+*,
+p,
+h1,h2,h3,h4,h5,h6{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	line-height: normal;
+}
+html{ 
+	overflow-x: hidden;
+}
+body{
+	padding: 8em 0 0 0;
+	overflow-x: hidden;
+	font-family: var(--fontMain);
+	font-size: 10px;
+	color: var(--colorMain);
+	background: var(--colorBg);
+	@media(max-width: 565px){
+		padding: 4.8em 0 0 0;
+		font-size: 7px;
+	}
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{ 
+	text-decoration: none;
+	&:hover{
+		text-decoration: none;
+	}
+}
+button{ 
+	background: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	&:focus{
+		outline: none;
+	}
+}
+input{
+	outline: none;
+}
+
+section{
+	position: relative;
+}
+
+.container{
+	position: relative;
+	max-width: 131em;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 1.5em;
+}
+
+.compensate-for-scrollbar{
+	padding-right: 0 !important;
+}
+
+.fancybox__content :focus:not(.carousel__button.is-close){
+	outline: none;
+}
+
+.mobile{
+	display: none;
+}
+
+@media screen and ( max-width: 992px ){
+	.mobile{
+		display: flex;
+	}
+	.desctop{
+		display: none;
+	}
+}
+
+/* ============================================================= TEMPLATES */
+@import 'blocks/templates';
+
+/* ============================================================= HEADER */
+@import 'blocks/header';
+/* ============================================================= НАЧАЛЬНЫЙ ЭКРАН */
+@import 'blocks/home';
+/* ============================================================= О ПРОЕКТЕ */
+@import 'blocks/about';
+/* ============================================================= АПАРТАМЕНТЫ */
+@import 'blocks/apartaments';
+/* ============================================================= ФОТОГАЛЕРЕЯ */
+@import 'blocks/gallery';
+/* ============================================================= РАСПОЛОЖЕНИЕ */
+@import 'blocks/location';
+/* ============================================================= ИПОТЕКА */
+@import 'blocks/mortgage';
+/* ============================================================= ВОПРОСЫ */
+@import 'blocks/faq';
+/* ============================================================= ОБРАТНЫЙ ЗВОНОК */
+@import 'blocks/ordercall';
+/* ============================================================= FOOTER */
+@import 'blocks/footer';
+/* =============================================================  */
+@import 'blocks/fastCommunication';
+/* =============================================================  */
+@import 'blocks/modal';

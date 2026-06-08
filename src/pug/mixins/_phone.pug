@@ -1,0 +1,4 @@
+mixin phone(className, numLink, num)
+	a.phone(href=`tel:${numLink}` class= className)
+		img(src="img/icons/icon-phone.png", alt="phone")
+		span #{num}

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- favicon-->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+    <!-- fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css"/>
+    <!-- fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+    <!-- swiper slider-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!-- animate css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- custom styles-->
+    <link rel="stylesheet" href="css/main.css"/>
+    <title>Klubniy Dom</title>
+  </head>
+  <body>
+    <!-- ======================================== HEADER-->
+    <header class="header">
+      <div class="container"> 
+        <nav class="header__nav"> <img class="logo" src="img/logo.png" alt="logo"/>
+          <button class="mobile header__burger js-menutoggle"> <img src="img/icons/icon-menu.png" alt="icon-menu"/></button>
+          <div class="header-menu">
+            <div class="mobile">
+              <button class="header-menu__close js-menutoggle"> <i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <ul class="header-menu__list">
+              <li class="header-menu__item"> <a class="header-menu__link js-scrollToSection" href="#about">о проекте</a></li>
+              <li class="header-menu__item"> <a class="header-menu__link js-scrollToSection" href="#apartaments">апартаменты</a></li>
+              <li class="header-menu__item"> <a class="header-menu__link js-scrollToSection" href="#location">расположение</a></li>
+              <li class="header-menu__item"> <a class="header-menu__link js-scrollToSection" href="#mortgage">ипотека</a></li>
+              <li class="header-menu__item"> <a class="header-menu__link js-scrollToSection" href="#faq">faq</a></li>
+              <li class="header-menu__item"> <a class="header-menu__link js-scrollToSection" href="#contacts">контакты</a></li>
+            </ul>
+          </div><a class="phone header__phone" href="tel:+74959799955"><img src="img/icons/icon-phone.png" alt="phone"/><span>+7 (495) 97 999 55</span></a><a class="header__button" href="#modal-form" data-fancybox="data-fancybox">заказать звонок</a>
+        </nav>
+      </div>
+    </header>
+    <div class="main-page">
+      <!-- ======================================== НАЧАЛЬНЫЙ ЭКРАН-->
+      <div class="home-slider" id="home"> 
+        <div class="swiper"> 
+          <div class="swiper-wrapper">
+                <div class="swiper-slide"> <img class="swiper-slide__img" src="img/slide-0.webp" alt="slide"/>
+                  <div class="container"> 
+                    <div class="slider-card" data-swiper-parallax="-800" data-swiper-parallax-duration="600"> 
+                      <div class="slider-card__title title">
+                        <p class="title__overtitle">клубный дом </p>
+                        <div class="title__name">«изобилие»</div>
+                      </div>
+                      <figure class="slider-card__info"> <img class="slider-card__img" src="img/slide-img-0.webp" alt="slide-img"/>
+                        <p class="slider-card__text">флагман доступного комфортного жилья <br> на северо-востоке ближайшего Подмосковья!</p>
+                            <button class="button slider-card__button">подробнее</button>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide"> <img class="swiper-slide__img" src="img/ordercall-img.webp" alt="slide"/>
+                  <div class="container"> 
+                    <div class="slider-card" data-swiper-parallax="-800" data-swiper-parallax-duration="600"> 
+                      <div class="slider-card__title title">
+                        <p class="title__overtitle"> </p>
+                        <div class="title__name"></div>
+                      </div>
+                      <figure class="slider-card__info"> <img class="slider-card__img" src="img/slide-img-0.webp" alt="slide-img"/>
+                        <p class="slider-card__text"></p>
+                            <button class="button slider-card__button">подробнее</button>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide"> <img class="swiper-slide__img" src="img/slide-0.webp" alt="slide"/>
+                  <div class="container"> 
+                    <div class="slider-card" data-swiper-parallax="-800" data-swiper-parallax-duration="600"> 
+                      <div class="slider-card__title title">
+                        <p class="title__overtitle"> </p>
+                        <div class="title__name"></div>
+                      </div>
+                      <figure class="slider-card__info"> <img class="slider-card__img" src="img/slide-img-0.webp" alt="slide-img"/>
+                        <p class="slider-card__text"></p>
+                            <button class="button slider-card__button">подробнее</button>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <div class="home-slider__nav">
+            <div class="slider-count"> 
+              <div class="slider-count__curr"></div>
+              <div class="slider-count__divider"></div>
+              <div class="slider-count__total"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="home-slider__arrows"> 
+              <button class="home-slider__arrow js-home-slider--prev"><img src="img/icons/icon-arrow-left.png" alt="arrow"/></button>
+              <button class="home-slider__arrow js-home-slider--next"><img src="img/icons/icon-arrow-right.png" alt="arrow"/></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ======================================== О ПРОЕКТЕ-->
+      <section class="about" id="about"> 
+        <div class="container">
+          <div class="about__title">
+                <div class="title">
+                  <p class="title__overtitle">о проекте</p>
+                  <div class="title__name">Клубный дом «Изобилие»</div>
+                </div>
+          </div>
+          <div class="about__content"><img class="about__logo" src="img/logo.png" alt="logo"/>
+            <div class="about__text"> 
+              <p>Оптимальное по стоимости и комфортное жилье в пределах города с необходимой инфраструктурой в шаговой доступности.</p>
+              <p>В здании предусмотрено 182 апартамента площадью 21 кв.м. имеющие антресоли, которые позволяют добавить к основной площади ещё до 6,7 кв.м. для размещения спальни.</p>
+            </div><img class="about__img" src="img/about-img.webp" alt="about-img"/>
+          </div>
+          <div class="reservation-form">
+            <form class="form" action="/"> 
+              <div class="reservation-form__title">Успей забронировать Аппартаменты по цене 2022 года</div>
+              <div class="reservation-form__fields"> 
+                <div class="reservation-form__field">
+                  <input class="form__input" type="text" placeholder="Ваше имя"/>
+                </div>
+                <div class="reservation-form__field">
+                  <input class="form__input js-phoneMask" type="text" placeholder="Телефон"/>
+                </div>
+                    <button class="button reservation-form__button">отправить заявку</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- ======================================== АПАРТАМЕНТЫ-->
+      <section class="apartaments" id="apartaments">
+        <div class="container"> 
+          <div class="apartaments__title"> 
+                <div class="title">
+                  <p class="title__overtitle">планировки</p>
+                  <div class="title__name">апартаментов</div>
+                </div>
+          </div>
+          <div class="previews apartaments__previews"> <a class="preview preview--sm preview--grid2" href="img/apartaments-0.webp" data-fancybox="gallery">
+                  <figure class="preview__img"><img src="img/apartaments-0.webp" alt="Презентабельный вид начиная с холла"/></figure>
+                  <div class="preview__name">Презентабельный вид начиная с холла</div></a><a class="preview preview--sm preview--grid2" href="img/apartaments-1.webp" data-fancybox="gallery">
+                  <figure class="preview__img"><img src="img/apartaments-1.webp" alt="Вариант отделки"/></figure>
+                  <div class="preview__name">Вариант отделки</div></a><a class="preview preview--sm preview--grid2" href="img/apartaments-2.webp" data-fancybox="gallery">
+                  <figure class="preview__img"><img src="img/apartaments-2.webp" alt="Вариант отделки"/></figure>
+                  <div class="preview__name">Вариант отделки</div></a><a class="preview preview--lg preview--grid2" href="img/apartaments-3.webp" data-fancybox="gallery">
+                  <figure class="preview__img"><img src="img/apartaments-3.webp" alt="Планировка"/></figure>
+                  <div class="preview__name">Планировка</div></a>
+            <div class="preview preview--lg preview--grid2">
+              <div class="preview-central">
+                <div class="preview-central__text">высота потолков <br/> от <span>3,5 м</span></div><img class="preview-central__img" src="img/boy.webp" alt="boy"/>
+              </div>
+            </div><a class="preview preview--md preview--grid1" href="img/apartaments-4.webp" data-fancybox="gallery">
+                  <figure class="preview__img"><img src="img/apartaments-4.webp" alt="Вариант отделки"/></figure>
+                  <div class="preview__name">Вариант отделки</div></a><a class="preview preview--sm preview--grid2" href="img/apartaments-5.webp" data-fancybox="gallery">
+                  <figure class="preview__img"><img src="img/apartaments-5.webp" alt="Общая комната для досуга, детская комната"/></figure>
+                  <div class="preview__name">Общая комната для досуга, детская комната</div></a>
+          </div>
+        </div>
+      </section>
+      <!-- ======================================== ФОТОГАЛЕРЕЯ-->
+      <section class="gallery"> 
+        <div class="container"> 
+          <div class="gallery__title">
+                <div class="title">
+                  <p class="title__overtitle">«Изобилие»</p>
+                  <div class="title__name">Фотогалерея</div>
+                </div>
+          </div>
+          <div class="previews gallery__previews"> <a class="preview preview--sm preview--grid2" href="img/gallery-0.webp" data-fancybox="gallery">
+                  <figure class="preview__img"><img src="img/gallery-0.webp" alt="Современные фасады здания"/></figure>
+                  <div class="preview__name">Современные фасады здания</div></a><a class="preview preview--sm preview--grid2" href="img/gallery-1.webp" data-fancybox="gallery">
+                  <figure class="preview__img"><img src="img/gallery-1.webp" alt="Вариант отделки"/></figure>
+                  <div class="preview__name">Вариант отделки</div></a><a class="preview preview--sm preview--grid2" href="img/gallery-2.webp" data-fancybox="gallery">
+                  <figure class="preview__img"><img src="img/gallery-2.webp" alt="Вариант отделки"/></figure>
+                  <div class="preview__name">Вариант отделки</div></a><a class="preview preview--md preview--grid3" href="img/gallery-3.webp" data-fancybox="gallery">
+                  <figure class="preview__img"><img src="img/gallery-3.webp" alt="Название фото"/></figure>
+                  <div class="preview__name">Название фото</div></a><a class="preview preview--sm preview--grid2" href="img/gallery-4.webp" data-fancybox="gallery">
+                  <figure class="preview__img"><img src="img/gallery-4.webp" alt="Название фото"/></figure>
+                  <div class="preview__name">Название фото</div></a><a class="preview preview--md preview--grid3" href="img/gallery-5.webp" data-fancybox="gallery">
+                  <figure class="preview__img"><img src="img/gallery-5.webp" alt="Название фото"/></figure>
+                  <div class="preview__name">Название фото</div></a><a class="preview preview--sm preview--grid2" href="img/gallery-7.webp" data-fancybox="gallery">
+                  <figure class="preview__img"><img src="img/gallery-7.webp" alt="Название фото"/></figure>
+                  <div class="preview__name">Название фото</div></a><a class="preview preview--sm preview--grid2" href="img/gallery-6.webp" data-fancybox="gallery">
+                  <figure class="preview__img"><img src="img/gallery-6.webp" alt="Название фото"/></figure>
+                  <div class="preview__name">Название фото</div></a><a class="preview preview--sm preview--grid2" href="img/gallery-8.webp" data-fancybox="gallery">
+                  <figure class="preview__img"><img src="img/gallery-8.webp" alt="Название фото"/></figure>
+                  <div class="preview__name">Название фото</div></a>
+            <div class="preview preview--sm preview--grid1">
+              <div class="preview-btn">
+                    <button class="button preview-btn__more">еще фото</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======================================== РАСПОЛОЖЕНИЕ-->
+      <section class="location" id="location"> 
+        <div class="container"> 
+          <div class="location__title">
+                <div class="title">
+                  <p class="title__overtitle">удобное</p>
+                  <div class="title__name">расположение</div>
+                </div>
+          </div>
+          <div class="location__box"><img class="location__logo" src="img/logo.png" alt="logo"/>
+            <div class="location__items"> 
+              <div class="location__name">Транспортная доступность</div>
+              <ul class="location__list"> 
+                <li class="location__item"> <img class="location__icon" src="img/icons/icon-car.png" alt=""/><span class="location__text">- До МКАД 30 минут</span></li>
+                <li class="location__item"> <img class="location__icon" src="img/icons/icon-metro.png" alt=""/><span class="location__text">- Станция &quot;Соколовская&quot; - 20 минут </span></li>
+                <li class="location__item"> <img class="location__icon" src="img/icons/icon-metro.png" alt=""/><span class="location__text">- Станция &quot;Воронок&quot; - 18 минут </span></li>
+              </ul>
+              <div class="location__name">В шаговой доступности</div>
+              <ul class="location__list"> 
+                <li class="location__item"> <img class="location__icon" src="img/icons/icon-shop.png" alt=""/><span class="location__text">- Сетевые продуктовые магазины</span></li>
+                <li class="location__item"> <img class="location__icon" src="img/icons/icon-cinema.png" alt=""/><span class="location__text">- Кинотеатр &quot;5 звезд&quot; </span></li>
+                <li class="location__item"> <img class="location__icon" src="img/icons/icon-school.png" alt=""/><span class="location__text">- Школы, детские сады </span></li>
+              </ul>
+            </div><img class="location__img" src="img/location-img.webp" alt="location-img"/>
+          </div>
+          <div class="location__map" id="map"></div>
+        </div>
+      </section>
+      <!-- ======================================== ИПОТЕКА-->
+      <section class="mortgage" id="mortgage"> 
+        <div class="container"> 
+          <div class="mortgage__title"> 
+                <div class="title">
+                  <p class="title__overtitle">доступная</p>
+                  <div class="title__name">ипотека</div>
+                </div>
+          </div>
+          <div class="mortgage__box"><img class="mortgage__logo" src="img/logo.png" alt="logo"/><img class="mortgage__img" src="img/mortgage-img.webp" alt="mortgage-img"/>
+            <div class="mortgage-info"> 
+              <p class="mortgage-info__title">Оставьте заявку и наш ипотечный менеджер подберет <br/> для Вас лучшие условия.</p>
+                  <button class="button mortgage-info__button">заявка на ипотеку</button>
+              <ul class="mortgage__list"> 
+                <li class="mortgage__item"> <img class="mortgage__icon" src="img/icons/icon-rate.png" alt="icon"/><span class="mortgage__text">- Ставка от 9.5% годовых</span></li>
+                <li class="mortgage__item"> <img class="mortgage__icon" src="img/icons/icon-hand.png" alt="icon"/><span class="mortgage__text">- Сотрудничаем с 10 банками</span></li>
+                <li class="mortgage__item"> <img class="mortgage__icon" src="img/icons/icon-diagram.png" alt="icon"/><span class="mortgage__text">- Первоначальный взнос от 15%</span></li>
+                <li class="mortgage__item"> <img class="mortgage__icon" src="img/icons/icon-calendar.png" alt="icon"/><span class="mortgage__text">- Срок кредитования до 25 лет</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="reservation-form">
+            <form class="form" action="/"> 
+              <div class="reservation-form__title">Успей забронировать Аппартаменты по цене 2022 года</div>
+              <div class="reservation-form__fields"> 
+                <div class="reservation-form__field">
+                  <input class="form__input" type="text" placeholder="Ваше имя"/>
+                </div>
+                <div class="reservation-form__field">
+                  <input class="form__input js-phoneMask" type="text" placeholder="Телефон"/>
+                </div>
+                    <button class="button reservation-form__button">отправить заявку</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- ======================================== ВОПРОСЫ-->
+      <section class="faq" id="faq"> 
+        <div class="container"> 
+          <div class="faq__title"> 
+                <div class="title">
+                  <p class="title__overtitle">часто задаваемые</p>
+                  <div class="title__name">вопросы</div>
+                </div>
+          </div>
+          <div class="faq__box"> 
+            <div class="faq__item">
+              <div class="faq-header js-faq-toggle"> <span class="faq-header__text">Можно сделать регистрацию?</span><i class="fas fa-chevron-down"></i></div>
+              <div class="faq-body"> 
+                <p class="faq-body__text">Да, временная регистрация от клубного дома.</p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <div class="faq-header js-faq-toggle"> <span class="faq-header__text">Можно получить налоговый вычет за апартаменты?</span><i class="fas fa-chevron-down"></i></div>
+              <div class="faq-body"> 
+                <p class="faq-body__text">Нет, вернуть налог за нежилое помещение не получится ни одним из способов — ни через работодателя, ни через налоговую инспекцию. В первую очередь вычет зависит от статуса помещения — жилое или нет. Право на возврат налога возникает только при покупке или строительстве жилой недвижимости. Также сумма возврата зависит от стоимости жилья и от величины уплаченного вами подоходного налога. Налог на имущество для апартаментов в пять раз выше самой низкой ставки по квартирам — 0,5%. Если помещение расположено в деловом комплексе, то сумма составляет до 2%. Для владельцев апартаментов не предусмотрен вычет на 20 кв. м, как в квартире. </p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <div class="faq-header js-faq-toggle"> <span class="faq-header__text">Есть государственная поддержка?</span><i class="fas fa-chevron-down"></i></div>
+              <div class="faq-body"> 
+                <p class="faq-body__text">Государство не субсидирует покупку апартаментов, на них нельзя потратить материнский капитал. Если планируете жить в коммерческом помещении с семьей, будьте готовы к выплате всей суммы без поддержки и помощи. </p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <div class="faq-header js-faq-toggle"> <span class="faq-header__text">Нужно платить за капитальный ремонт?</span><i class="fas fa-chevron-down"></i></div>
+              <div class="faq-body"> 
+                <p class="faq-body__text">Покупатели апартаментов освобождены от такой обязанности. Если дому требуется ремонт, необходимые траты собственники несут поровну.</p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <div class="faq-header js-faq-toggle"> <span class="faq-header__text">Сколько этажей клубный дом? </span><i class="fas fa-chevron-down"></i></div>
+              <div class="faq-body"> 
+                <p class="faq-body__text">4-этажное здание с двумя секциями.</p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <div class="faq-header js-faq-toggle"> <span class="faq-header__text">Сколько студий будет на этаже?</span><i class="fas fa-chevron-down"></i></div>
+              <div class="faq-body"> 
+                <p class="faq-body__text">На этаже расположено 46 апартаментов. </p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <div class="faq-header js-faq-toggle"> <span class="faq-header__text">Будет ли отделка в студии? Какая отделка в апартаментах? </span><i class="fas fa-chevron-down"></i></div>
+              <div class="faq-body"> 
+                <p class="faq-body__text">Если Вы приобрели студию с учетом внутренней отделки, то отделка выполняется в современном дизайне, в стиле «Скандинавия», в бело-серых тонах. Мягкая мебель и уютная кухня. Также мы можем сделать отделку студии по вашим предпочтениям. </p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <div class="faq-header js-faq-toggle"> <span class="faq-header__text">Я могу посмотреть рендеры с отделкой или 3D модели? </span><i class="fas fa-chevron-down"></i></div>
+              <div class="faq-body"> 
+                <p class="faq-body__text">Да, на сайте клубного дома представлена 3д модель с визуализацией квартир. </p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <div class="faq-header js-faq-toggle"> <span class="faq-header__text">Какие коммуникации в доме? </span><i class="fas fa-chevron-down"></i></div>
+              <div class="faq-body"> 
+                <p class="faq-body__text">В доме проведены все новые коммуникации, пожарная сигнализация, система кондиционирования, видеонаблюдение, а также магнитная карта для проезда через шлагбаум на парковочную зону и входа в здание.</p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <div class="faq-header js-faq-toggle"> <span class="faq-header__text">Как будет управляться дом?</span><i class="fas fa-chevron-down"></i></div>
+              <div class="faq-body"> 
+                <p class="faq-body__text">В клубном доме есть собственная управляющая компания, а также запроектированы трансформаторная станция и газовая котельная.</p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <div class="faq-header js-faq-toggle"> <span class="faq-header__text">Что находится внутри дома? </span><i class="fas fa-chevron-down"></i></div>
+              <div class="faq-body"> 
+                <p class="faq-body__text">Комната для проведения досуга с большим экраном для просмотра фильмов, игровая зона для детей и взрослых, прокат спортивного инвентаря, тренажёры, централизованная доставка продуктов и многие другие полезные услуги. </p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <div class="faq-header js-faq-toggle"> <span class="faq-header__text">Есть в доме места для хранения вещей? </span><i class="fas fa-chevron-down"></i></div>
+              <div class="faq-body"> 
+                <p class="faq-body__text">Да, на цокольном этаже сделаны ячейки для хранения вещей. </p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <div class="faq-header js-faq-toggle"> <span class="faq-header__text">Есть ли бонус от Клубного дома?</span><i class="fas fa-chevron-down"></i></div>
+              <div class="faq-body"> 
+                <p class="faq-body__text">Да, в качестве бонуса за покупку апартаментов клубного дома, мы дарим оранжевые подушки с нашим логотипом. </p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <div class="faq-header js-faq-toggle"> <span class="faq-header__text">Будут ли обустроены детские и спортивные площадки? </span><i class="fas fa-chevron-down"></i></div>
+              <div class="faq-body"> 
+                <p class="faq-body__text">На улице построена детская площадка, зона барбекю и площадка для занятий спортом. </p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <div class="faq-header js-faq-toggle"> <span class="faq-header__text">Есть ли парковка на территории клубного дома? </span><i class="fas fa-chevron-down"></i></div>
+              <div class="faq-body"> 
+                <p class="faq-body__text">Да, на территории есть охраняемая парковка на 50 машин с видеонаблюдением и пропускной системой. </p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <div class="faq-header js-faq-toggle"> <span class="faq-header__text">Какая инфраструктура доступна? </span><i class="fas fa-chevron-down"></i></div>
+              <div class="faq-body"> 
+                <p class="faq-body__text">Да, вся инфраструктура находится в 12 минутах ходьбы (школа, детский сад, поликлиника, магазины, аптеки, спортивные секции, развлечения, кафе, рестораны и ещё много полезных локаций), пляж с зоной отдыха. Шаговая доступность до городских пляжей. На территории пляжей установлены шезлонги и зонтики, торговые объекты и спасательные вышки. Также предусмотрены парковки, пешеходные дорожки.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======================================== ОБРАТНЫЙ ЗВОНОК-->
+      <section class="ordercall"> 
+        <div class="container"> 
+          <div class="ordercall__title"> 
+                <div class="title">
+                  <p class="title__overtitle">остались вопросы ?</p>
+                  <div class="title__name">обратный звонок</div>
+                </div>
+          </div>
+          <div class="ordercall__box"> <img class="ordercall__img" src="img/ordercall-img.webp" alt="ordercall-img"/>
+            <form class="ordercall-form" action="/">
+              <p class="ordercall-form__title">Оставьте заявку и мы поможем вам подобрать недвижимость, или ответим на любые вопросы.</p>
+              <input class="ordercall-form__input" type="text" placeholder="Ваше имя"/>
+              <input class="ordercall-form__input js-phoneMask" type="text" placeholder="Телефон"/>
+                  <button class="button ordercall-form__button">отправить заявку</button>
+              <p class="ordercall-form__text">Отправляя заявку, вы соглашаетесь на обработку ваших персональных данных в соответствии с политикой конфеденциальности.</p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- ======================================== FOOTER-->
+    <footer class="footer" id="contacts"> <img class="footer__decor" src="img/footer-decor.webp" alt="footer-decor"/>
+      <div class="container"> 
+        <div class="footer__box"> 
+          <div class="footer__col"> <img class="footer__logo" src="img/footer-logo.png" alt="footer-logo"/>
+            <p class="footer__adress">Г. ЩЕЛКОВО УЛ. БРАВАРСКАЯ 46</p><a class="phone footer__phone" href="tel:+74959799955"><img src="img/icons/icon-phone.png" alt="phone"/><span>+7 (495) 97 999 55</span></a><a class="phone footer__phone" href="tel:+79775575955"><img src="img/icons/icon-phone.png" alt="phone"/><span>+7 (977) 55 759 55</span></a>
+            <p class="footer__rights">© Клубный дом «Изобилие», <br/> все права защищены 2022</p>
+          </div>
+          <div class="footer__col"> 
+                <button class="button footer__button">заказать звонок</button>
+            <ul class="footer-menu"> 
+              <li class="footer-menu__item"><a class="footer-menu__link js-scrollToSection" href="#about">о проекте</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link js-scrollToSection" href="#apartaments">апартаменты</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link js-scrollToSection" href="#location">расположение</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link js-scrollToSection" href="#mortgage">ипотека</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link js-scrollToSection" href="#faq">faq</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link js-scrollToSection" href="#contacts">контакты</a></li>
+            </ul><a class="footer__policy" href="">Политика конфиденциальности </a>
+          </div>
+          <div class="footer__col">
+            <div class="socials"> <a class="socials__icon" href=""><i class="fab fa-facebook-f"></i></a><a class="socials__icon" href=""><i class="fab fa-instagram"></i></a><a class="socials__icon" href=""><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-develop"> 
+        <div class="container">
+          <div class="footer-develop__box"><span>Разработка и продвижение сайта</span><img src="img/logo-scrum.png" alt="logo-scrum"/></div>
+        </div>
+      </div>
+    </footer><a class="go-top js-scrollToSection" href="#home"> <img src="img/icons/icon-gotop.png" alt="go-top"/></a>
+    <!-- ======================================== -->
+    <div class="fast-communication"><a class="fast-communication__icon fast-communication__icon--whatsapp" href="https://wa.me/+79775575955"> <i class="fa-brands fa-whatsapp"></i></a><a class="fast-communication__icon fast-communication__icon--telegram" href="https://t.me/+79775575955"> <i class="fa-brands fa-telegram"></i></a></div>
+    <!-- ======================================== -->
+    <div class="modal" id="modal-form" style="display:none">
+      <div class="modal-form">
+        <form class="form" action="/"> 
+          <div class="modal-form__title">Заказать звонок</div>
+          <div class="modal-form__field">
+            <input class="form__input" type="text" placeholder="Ваше имя"/>
+          </div>
+          <div class="modal-form__field">
+            <input class="form__input js-phoneMask" type="text" placeholder="Телефон"/>
+          </div>
+              <button class="button modal-form__button">отправить заявку</button>
+        </form>
+      </div>
+    </div>
+    <!-- ======================================== SCRIPTS-->
+    <!-- jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <!-- inputmask -->
+    <script src="https://rawgit.com/RobinHerbots/Inputmask/5.x/dist/jquery.inputmask.js"></script>
+    <!-- swiper slider-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- scripts-->
+    <script src="js/main.js"></script>
+  </body>
+</html>
